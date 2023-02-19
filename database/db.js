@@ -8,7 +8,7 @@ const USERNAME=process.env.DB_USERNAME
 const PASS=process.env.DB_PASS
 
  const Connection=()=>{
-    const MONGODB_URL=`mongodb+srv://${USERNAME}:${PASS}@mern-todo.dys4wj0.mongodb.net/test?retryWrites=true&w=majority`
+    const MONGODB_URL=`mongodb+srv://${USERNAME}:${PASS}@mern-todo.dys4wj0.mongodb.net/?retryWrites=true&w=majority`
     // const MONGODB_URL=`mongodb+srv://${USERNAME}:${PASS}@cluster0.spp9j6n.mongodb.net/?retryWrites=true&w=majority`
    
     mongoose.connect(MONGODB_URL,{useNewUrlParser:true})
